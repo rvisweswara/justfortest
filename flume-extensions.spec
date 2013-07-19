@@ -6,7 +6,7 @@ Summary: Expedia flume extensions
 Group: Applications/Internet
 License: EPLv1
 URL: http://project.net
-Source: das-xml2sql-sink-956.tar.gz
+Source: das-xml2sql-sink-%{version}.tar.gz
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 #Requires:      
 %description
