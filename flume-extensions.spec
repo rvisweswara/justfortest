@@ -1,5 +1,5 @@
 Name: das-xml2sql-sink
-Version: 957
+Version: 958
 Release: 1%{?dist}
 Summary: Expedia flume extensions
 #Group: Applications/Internet
