@@ -23,10 +23,10 @@ flume extensions developed at expedia
 [ "%{buildroot}" != "/" ] && %{__rm} -rf %{buildroot}
 
 # Copy the flume-extension jars to the right places
-%{__mkdir_p} %{buildroot}/tmp/usr/lib/flume-ng/plugins.d/lib
-%{__mkdir_p} %{buildroot}/tmp/usr/lib/flume-ng/plugins.d/libext
-%{__cp} expedia/lib/*.jar %{buildroot}/tmp/usr/lib/flume-ng/plugins.d/lib
-%{__cp} expedia/libext/*.jar %{buildroot}/tmp/usr/lib/flume-ng/plugins.d/libext
+%{__mkdir_p} %{buildroot}/usr/lib/flume-ng/plugins.d/lib
+%{__mkdir_p} %{buildroot}/usr/lib/flume-ng/plugins.d/libext
+%{__cp} expedia/lib/*.jar %{buildroot}/usr/lib/flume-ng/plugins.d/lib
+%{__cp} expedia/libext/*.jar %{buildroot}/usr/lib/flume-ng/plugins.d/libext
 
 # Form a list of files for the files directive
 echo $(cd %{buildroot} && find . -type f | cut -c 2-) | tr ' ' '\n' > files.txt
